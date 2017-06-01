@@ -51,6 +51,10 @@ a{
 	border-right: none;
 }
 
+#section1>a{
+	vertical-align: middle;
+}
+
 .abtus-top{
 	color: white;
 	font-weight: bold;
@@ -59,15 +63,36 @@ a{
 	margin-left: 70px;
 	margin-top: 20px;
 	cursor: pointer;
+	margin-bottom: 30px;
 }
 
 .abtus-top:hover{
 	border-bottom: 3px solid #a2d557;
 }
 
+.active{
+	border-bottom: 3px solid #a2d557;
+}
+
 #nav:hover{
 	background-color: rgba(1,1,1,0.7);
-	padding-bottom: 28px;
+}
+
+.nav-fix{
+	position: fixed;
+	top:0;
+	background-color: rgba(1,1,1,0.7);
+	height: 100px;
+	width: 100%;
+	z-index: 1;
+}
+
+#img-nav{
+	display: none;
+	transform: scale(0.4,0.4);
+	vertical-align: middle;
+	width:200px;
+	margin:0;
 }
 
 #section2{

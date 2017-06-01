@@ -31,4 +31,48 @@ $(document).ready(function(){
 		$(this).parent().toggle();
 	});
 
+	document.addEventListener("scroll",function(){
+		if($("body").scrollTop()>600){
+			$("#nav").addClass("nav-fix");
+			$("#img-nav").css("display","inline-block");
+		}
+		else{
+			$("#nav").removeClass("nav-fix");
+			$("#img-nav").css("display","none");
+		}
+
+		var value=$("body").scrollTop();
+		$(".abtus-top").css("border-bottom","none");
+
+		switch(true){
+		case (value>600 && value<1382): 
+			$("#abtus").css("border-bottom","3px solid #a2d557");
+			break;
+
+		case (value>1382 && value<=2440):  
+			$("#solns").css("border-bottom","3px solid #a2d557"); 
+			break;
+
+		case (value>2440 && value<=3380): 
+			$("#whyus").css("border-bottom","3px solid #a2d557");
+			break;
+
+		case (value>3380 && value<=4117): 
+			$("#reporting").css("border-bottom","3px solid #a2d557");
+			break;
+
+		case (value>4117 && value<=4817): 
+			$("#cause").css("border-bottom","3px solid #a2d557");
+			break;
+
+		case (value>4817 && value<=5658): 
+			$("#reachus").css("border-bottom","3px solid #a2d557");
+			break;
+
+		default: 
+			break;
+		}
+
+	},true);
+
 });
