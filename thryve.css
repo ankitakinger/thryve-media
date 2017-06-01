@@ -5,6 +5,10 @@ body {
 	background-repeat: repeat;
 }
 
+a{
+	text-decoration: none;
+}
+
 #section1{
 	background-image: url("bg-slide1.jpg");
 	height: 665px;
@@ -22,6 +26,7 @@ body {
 #logo {
 	height:110px;
 	width:340px;
+	cursor: pointer;
 }
 
 #quote-top {
@@ -39,6 +44,7 @@ body {
 	padding-left: 20px;
 	margin-top: 35px;
 	border-right: 1px solid white;
+	cursor: pointer;
 }
 
 #mobile{
@@ -52,11 +58,21 @@ body {
 	display: inline-block;
 	margin-left: 70px;
 	margin-top: 20px;
+	cursor: pointer;
+}
+
+.abtus-top:hover{
+	border-bottom: 3px solid #a2d557;
+}
+
+#nav:hover{
+	background-color: rgba(1,1,1,0.7);
+	padding-bottom: 28px;
 }
 
 #section2{
 	text-align: center;
-	margin-top: 100px;
+	padding-top: 100px;
 	font-size: 50px;
 	font-family: sans-serif;
 }
@@ -77,47 +93,80 @@ body {
 }
 
 #section3{
-	background-image: url("blurbg-slide2.jpg");
+	background: url("blurbg-slide2.jpg");
 	height:1050px;
 	background-size: cover;
 	margin-top: 120px;
 }
 
+#section3>div:hover{
+	background-color: rgba(162, 213, 87,0.6) !important;
+}
+
+.black-dual{
+	display: inline-block;
+	width:449px;
+	height: 1050px;
+	background-color: rgba(1,1,1,0.4);
+	vertical-align: top;
+}
+
+.black-dual-p{
+	display: none;
+	color: white;
+	position: relative;
+	top:100px;
+	font-size: 22px;
+	text-align: center;
+}
+
+.bg-img{
+	border: 1px solid rgba(0,0,0,0.4);
+	border-radius: 50%;
+	padding: 5px;
+}
+
+.bg-img:hover{
+	border-color: white;
+}
+
+#section3>div:nth-child(2){
+	background-color: rgba(1,1,1,0.6);
+}
+
 .blurbg-top{
+	cursor: pointer;
 	position: relative;
 	display: inline-block;
 	top:350px;
-	width:250px;
-	height:250px;
-	margin-left: 150px;
+	width:225px;
+	margin-left: 90px;
 	color:white;
 	font-size: 22px;
 	font-weight: bold;
 	font-family: sans-serif;
+	list-style-type: none;
+	text-align: center;
+}
+
+
+.blurbg-top-click{
+	transform: scale(0.7,0.7) translateY(-350px);
 }
 
 #search-fs{
 	background: url("featuressprite.png") 0 0 no-repeat;
+	height: 250px;
 }
 
 #video-fs{
-	background: url("featuressprite.png") -555px 0 no-repeat;
+	background: url("featuressprite.png") -558px 0 no-repeat;
+	height: 250px;
 }
 
 #mobile-fs{
-	background: url("featuressprite.png") -1100px 0 no-repeat;
-}
-
-#search-text{
-	margin-left: 220px;
-}
-
-#video-text{
-	margin-left: 160px;
-}
-
-#mobile-text{
-	margin-left: 160px;
+	background: url("featuressprite.png") -1118px 0 no-repeat;
+	height: 250px;
 }
 
 #section4{
@@ -145,27 +194,29 @@ body {
 	display: inline-block;
 	width:100px;
 	height:80px;
-	margin-left: 175px;
 }
 
 #money-ss{
 	background: url("settingssprite.png") 0 0 no-repeat;
-	
 }
 
 #badge-ss{
-	background: url("settingssprite.png") -350px 0 no-repeat;
-	
+	background: url("settingssprite.png") -365px 0 no-repeat;
 }
 
 #tools-ss{
 	background: url("settingssprite.png") -750px 0 no-repeat;
-	margin-left: 210px;
 }
 
 #graph-ss{
 	background: url("settingssprite.png") -1150px 0 no-repeat;
-	margin-left: 230px;
+}
+
+.setsprite-div{
+	display: inline-block;
+	width:275px;
+	vertical-align: top;
+	margin-left: 50px;
 }
 
 .setsprite-text{
@@ -175,7 +226,7 @@ body {
 	display: inline-block;
 	font-weight: bold;
 	margin-top: 30px;
-	margin-left: 120px;
+	list-style-type: none;
 }
 
 #section6{
@@ -297,6 +348,7 @@ body {
 
 #msg{
 	width:80%;
+	resize: none;
 }
 
 #connect{
@@ -322,6 +374,11 @@ body {
 	margin-bottom: 55px;
 	font-size: 18px;
 	font-family: sans-serif;
+	cursor: pointer;
+}
+
+.cs:hover{
+	text-decoration: underline;
 }
 
 #call-cs{
@@ -377,6 +434,10 @@ body {
 #social{
 	padding-left: 20px;
 	vertical-align: middle;
+}
+
+#social:hover{
+	opacity: 0.5;
 }
 
 #copyright{

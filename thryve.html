@@ -7,6 +7,8 @@
 		Thryve Media
 	</title>
 	<link rel="stylesheet" type="text/css" href="thryve.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script type="text/javascript" src="thryve.js"></script>
 </head>
 
 <body>
@@ -16,16 +18,18 @@
 			<img src="logo.png" alt="logo" id="logo"/>
 			<div id="quote-top">Where people, partners,<br> and profits thryve</div>
 
-			<div class="svm-top" id="search">Search</div>
-			<div class="svm-top" id="video">Video</div>
-			<div class="svm-top" id="mobile">Mobile</div>
+			<a href="#black-dual-first"><div class="svm-top" id="search">Search</div></a>
+			<a href="#black-dual-mid"><div class="svm-top" id="video">Video</div></a>
+			<a href="#black-dual-last"><div class="svm-top" id="mobile">Mobile</div></a>
 			<br>
-			<div class="abtus-top" id="abtus">about us</div>
-			<div class="abtus-top" id="solns">solutions</div>
-			<div class="abtus-top" id="whyus">why us?</div>
-			<div class="abtus-top" id="reporting">reporting</div>
-			<div class="abtus-top" id="cause">thryve for a cause</div>
-			<div class="abtus-top" id="reachus">reach us</div>
+			<nav id="nav">
+			<a href="#section2"><div class="abtus-top" id="abtus">about us</div></a>
+			<a href="#section3"><div class="abtus-top" id="solns">solutions</div></a>
+			<a href="#section4"><div class="abtus-top" id="whyus">why us?</div></a>
+			<a href="#section6"><div class="abtus-top" id="reporting">reporting</div></a>
+			<a href="#section7"><div class="abtus-top" id="cause">thryve for a cause</div></a>
+			<a href="#section8"><div class="abtus-top" id="reachus">reach us</div></a>
+			</nav>
 		</div>
 	</div>
 
@@ -42,13 +46,28 @@
 	</div>
 
 	<div id="section3">
-			<div class="blurbg-top" id="search-fs"></div>
-			<div class="blurbg-top" id="video-fs"></div>
-			<div class="blurbg-top" id="mobile-fs"></div>
-			<br>
-			<div class="blurbg-top" id="search-text">SEARCH</div>
-			<div class="blurbg-top" id="video-text">VIDEO</div>
-			<div class="blurbg-top" id="mobile-text">MOBILE</div>
+			<div class="black-dual" id="black-dual-first">
+				<ul class="blurbg-top">
+					<li id="search-fs"></li>
+					<li id="search-text">SEARCH</li>
+				</ul>
+				<p class="black-dual-p">We work with premium publishers and<br>developers to integrate targeted paid<br>search ads across your site or app.<br>We offer 1-click and 2-click (D2S) solutions<br>that can be customized to any<br>implementation. Approved publishers<br>and developers will have access to one<br>of the world's largest pools of keyword-<br>targeted ads, real-time reporting and<br>industry leading payouts.<br><br>
+				<img src="bg-closeFeature.png" class="bg-img"/></p>
+			</div><div class="black-dual" id="black-dual-mid">
+				<ul class="blurbg-top">
+					<li id="video-fs"></li>
+					<li id="video-text">VIDEO</li>
+				</ul>
+				<p class="black-dual-p">We work with advertisers and demand<br>partners to deliver user-initiated VAST-<br>enabled brand safe video inventory at<br>scale. You can target your audience<br>across multi-screens using valuable<br>insights such as age, gender and geo.<br>CPM and performance models available.<br><br>
+				<img src="bg-closeFeature.png" class="bg-img"/></p>
+			</div><div class="black-dual" id="black-dual-last">
+				<ul class="blurbg-top">
+					<li id="mobile-fs"></li>
+					<li id="mobile-text">MOBILE</li>
+				</ul>
+				<p class="black-dual-p">We help publishers and app developers<br>monetize their mobile traffic, acquire<br>high quality installs and drive<br>conversions. We work with all the major<br>ad formats – banner, interstitial and<br>video – and can work with you on a<br>variety of performance models,<br>including: Cost per Install (CPI), Cost per<br>Thousand (CPM) and Cost per Click<br>(CPC).<br><br>
+				<img src="bg-closeFeature.png" class="bg-img"/></p>
+			</div>
 	</div>
 
 	<div id="section4">
@@ -63,22 +82,43 @@
 	</div>
 
 	<div id="section5">
-			<div class="setsprite" id="money-ss"></div>
-			<div class="setsprite" id="badge-ss"></div>
-			<div class="setsprite" id="tools-ss"></div>
-			<div class="setsprite" id="graph-ss"></div><br>
-			<div class="setsprite-text" id="money-text">Accelerate revenue<br>
+
+		<div class="setsprite-div">
+			<ul class="setsprite-text">
+				<li class="setsprite" id="money-ss"></li>
+				<li id="money-text">Accelerate revenue<br>
 				with our innovative<br>
-				ad solutions</div>
-			<div class="setsprite-text" id="badge-text"/>Access hundreds<br>
+				ad solutions</li>
+			</ul>
+		</div>
+
+		<div class="setsprite-div">
+			<ul class="setsprite-text">
+				<li class="setsprite" id="badge-ss"></li>
+				<li id="badge-text"/>Access hundreds<br>
 				of thousands of high<br>
-				quality advertisers</div>
-			<div class="setsprite-text" id="tools-text"/>Customize our ad<br>
+				quality advertisers</li>
+			</ul>
+		</div>
+
+		<div class="setsprite-div">
+			<ul class="setsprite-text">
+				<li class="setsprite" id="tools-ss"></li>
+				<li id="tools-text"/>Customize our ad<br>
 				solutions for a<br>
-				perfect fit</div>
-			<div class="setsprite-text" id="graph-text"/>Track stats on your<br>
+				perfect fit</li>
+			</ul>
+		</div>
+
+		<div class="setsprite-div">
+			<ul class="setsprite-text">
+				<li class="setsprite" id="graph-ss"></li>
+				<li id="graph-text"/>Track stats on your<br>
 				computer, mobile phone<br>
-				or tablet</div>
+				or tablet</li>
+			</ul>
+		</div>
+			
 	</div>
 
 	<div id="section6">
@@ -139,6 +179,7 @@
 			<img src="socialiconssprite.png" id="social"></span>
 			<br>
 			<p id="copyright">&copy Copyright 2014. All Rights Reserved.</p>
+		</div>
 	</footer>
 
 	</body>
