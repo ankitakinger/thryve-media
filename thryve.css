@@ -87,6 +87,30 @@ a{
 	z-index: 1;
 }
 
+@keyframes example{
+	0%{
+		transform: scale(0,0);
+		width:0px;
+	}
+	
+	100%{
+		transform: scale(0.4,0.4);
+		width:200px;
+	}
+}
+
+@keyframes example2{
+	0%{
+		transform: scale(0.4,0.4);
+		width:200px;
+	}
+	
+	100%{
+		transform: scale(0,0);
+		width:0px;
+	}
+}
+
 #img-nav{
 	display: none;
 	transform: scale(0.4,0.4);
@@ -172,6 +196,7 @@ a{
 	font-family: sans-serif;
 	list-style-type: none;
 	text-align: center;
+	transition: all 0.5s ease-in;
 }
 
 

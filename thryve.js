@@ -35,10 +35,12 @@ $(document).ready(function(){
 		if($("body").scrollTop()>600){
 			$("#nav").addClass("nav-fix");
 			$("#img-nav").css("display","inline-block");
+			$("#img-nav").css("animation","example 1s ease");
 		}
 		else{
 			$("#nav").removeClass("nav-fix");
-			$("#img-nav").css("display","none");
+			$("#img-nav").css("animation","example2 1s ease forwards");
+			//$("#img-nav").css("animation-fill-mode","forwards");
 		}
 
 		var value=$("body").scrollTop();
