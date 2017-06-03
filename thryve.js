@@ -31,11 +31,17 @@ $(document).ready(function(){
 		$(this).parent().toggle();
 	});
 
-	document.addEventListener("scroll",function(){
-		if($("body").scrollTop()>600){
+	if($("body").scrollTop()>663){
 			$("#nav").addClass("nav-fix");
 			$("#img-nav").css("display","inline-block");
-			$("#img-nav").css("animation","example 1s ease");
+			$("#img-nav").css("animation","example 1s ease forwards");
+		}
+
+	document.addEventListener("scroll",function(){
+		if($("body").scrollTop()>663){
+			$("#nav").addClass("nav-fix");
+			$("#img-nav").css("display","inline-block");
+			$("#img-nav").css("animation","example 1s ease forwards");
 		}
 		else{
 			$("#nav").removeClass("nav-fix");
@@ -47,27 +53,27 @@ $(document).ready(function(){
 		$(".abtus-top").css("border-bottom","none");
 
 		switch(true){
-		case (value>600 && value<1382): 
+		case (value>663 && value<1390): 
 			$("#abtus").css("border-bottom","3px solid #a2d557");
 			break;
 
-		case (value>1382 && value<=2440):  
+		case (value>1390 && value<=2440):  
 			$("#solns").css("border-bottom","3px solid #a2d557"); 
 			break;
 
-		case (value>2440 && value<=3380): 
+		case (value>2440 && value<=3510): 
 			$("#whyus").css("border-bottom","3px solid #a2d557");
 			break;
 
-		case (value>3380 && value<=4117): 
+		case (value>3510 && value<=4250): 
 			$("#reporting").css("border-bottom","3px solid #a2d557");
 			break;
 
-		case (value>4117 && value<=4817): 
+		case (value>4250 && value<=4950): 
 			$("#cause").css("border-bottom","3px solid #a2d557");
 			break;
 
-		case (value>4817 && value<=5658): 
+		case (value>4950 && value<=5800): 
 			$("#reachus").css("border-bottom","3px solid #a2d557");
 			break;
 
