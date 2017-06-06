@@ -1,32 +1,42 @@
 $(document).ready(function(){
-	
+
+	var sections ={
+		"section1":false,
+		"section2":false,
+		"section3":true,
+		"section4":false,
+		"section6":true,
+		"section7":false,
+		"section8":false
+	};
+
+	$(".abtus-top").click(function(){
+		if(sections[this.dataset.href]==true){
+			$("body").animate({scrollTop:($("#"+this.dataset.href).offset().top-73)},500);
+		}
+		else{
+			$("body").animate({scrollTop:($("#"+this.dataset.href).offset().top)},500);
+		}
+
+	});
+
+	$(".svm-top").click(function(){
+		var svm_click = this.id;
+		var svm_open=$("#section3").find("[data-svm="+svm_click+"]");
+		svm_open.toggleClass("blurbg-top-click");
+		svm_open.next("p").toggle();
+	});
+
 	$(".blurbg-top").click(function(){
 		$(this).toggleClass("blurbg-top-click");
 		$(this).parent().find("p").toggle();
 	});
 
-	$("#search").click(function(){
-		$("#black-dual-first").find("ul").toggleClass("blurbg-top-click");
-		$("#black-dual-first").find("p").toggle();
-	});
-
-	$("#video").click(function(){
-		$("#black-dual-mid").find("ul").toggleClass("blurbg-top-click");
-		$("#black-dual-mid").find("p").toggle();
-	});
-
-	$("#mobile").click(function(){
-		$("#black-dual-last").find("ul").toggleClass("blurbg-top-click");
-		$("#black-dual-last").find("p").toggle();
-	});
-
 	$(".bg-img").click(function(){
-		// works
 		$(this).closest("div").find("ul").toggleClass("blurbg-top-click");
 		//works
 		// $(this).parent().prev("ul").toggleClass("blurbg-top-click");
 		// $(this).parent().parent().find("ul").toggleClass("blurbg-top-click");
-		// works but how come this ul only y not siblings - kindof understood
 		//$(this).parentsUntil("#section3").find("ul").toggleClass("blurbg-top-click");
 		$(this).parent().toggle();
 	});
@@ -53,19 +63,19 @@ $(document).ready(function(){
 		$(".abtus-top").css("border-bottom","none");
 
 		switch(true){
-		case (value>663 && value<1390): 
+		case (value>663 && value<1315): 
 			$("#abtus").css("border-bottom","3px solid #a2d557");
 			break;
 
-		case (value>1390 && value<=2440):  
+		case (value>1315 && value<=2440):  
 			$("#solns").css("border-bottom","3px solid #a2d557"); 
 			break;
 
-		case (value>2440 && value<=3510): 
+		case (value>2440 && value<=3435): 
 			$("#whyus").css("border-bottom","3px solid #a2d557");
 			break;
 
-		case (value>3510 && value<=4250): 
+		case (value>3435 && value<=4250): 
 			$("#reporting").css("border-bottom","3px solid #a2d557");
 			break;
 
@@ -73,7 +83,7 @@ $(document).ready(function(){
 			$("#cause").css("border-bottom","3px solid #a2d557");
 			break;
 
-		case (value>4950 && value<=5800): 
+		case (value>4950 && value<=5740): 
 			$("#reachus").css("border-bottom","3px solid #a2d557");
 			break;
 

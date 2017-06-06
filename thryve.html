@@ -13,7 +13,7 @@
 
 <body>
 
-	<div id="section1">
+	<div id="section1" data>
 		<div id="pos-sec1">
 			<img src="logo.png" alt="logo" id="logo"/>
 			<div id="quote-top">Where people, partners,<br> and profits thryve</div>
@@ -23,13 +23,13 @@
 			<a href="#black-dual-last"><div class="svm-top" id="mobile">Mobile</div></a>
 			<br>
 			<nav id="nav">
-			<a href="#section2"><div class="abtus-top" id="abtus">about us</div></a>
-			<a href="#section3"><div class="abtus-top" id="solns">solutions</div></a>
-			<a href="#section4"><div class="abtus-top" id="whyus">why us?</div></a>
-			<a href="#section1" id="img-nav"><img src="logo.png" alt="logo"/></a>
-			<a href="#section6"><div class="abtus-top" id="reporting">reporting</div></a>
-			<a href="#section7"><div class="abtus-top" id="cause">thryve for a cause</div></a>
-			<a href="#section8"><div class="abtus-top" id="reachus">reach us</div></a>
+			<div class="abtus-top" id="abtus" data-href="section2">about us</div>
+			<div class="abtus-top" id="solns" data-href="section3">solutions</div>
+			<div class="abtus-top" id="whyus" data-href="section4">why us?</div>
+			<a id="img-nav" class="abtus-top" data-href="section1"><img src="logo.png" alt="logo"></a>
+			<div class="abtus-top" id="reporting" data-href="section6">reporting</div>
+			<div class="abtus-top" id="cause" data-href="section7">thryve for a cause</div>
+			<div class="abtus-top" id="reachus" data-href="section8">reach us</div>
 			</nav>
 		</div>
 	</div>
@@ -48,21 +48,21 @@
 
 	<div id="section3">
 			<div class="black-dual" id="black-dual-first">
-				<ul class="blurbg-top">
+				<ul class="blurbg-top" data-svm="search">
 					<li id="search-fs"></li>
 					<li id="search-text">SEARCH</li>
 				</ul>
 				<p class="black-dual-p">We work with premium publishers and<br>developers to integrate targeted paid<br>search ads across your site or app.<br>We offer 1-click and 2-click (D2S) solutions<br>that can be customized to any<br>implementation. Approved publishers<br>and developers will have access to one<br>of the world's largest pools of keyword-<br>targeted ads, real-time reporting and<br>industry leading payouts.<br><br>
 				<img src="bg-closeFeature.png" class="bg-img"/></p>
 			</div><div class="black-dual" id="black-dual-mid">
-				<ul class="blurbg-top">
+				<ul class="blurbg-top" data-svm="video">
 					<li id="video-fs"></li>
 					<li id="video-text">VIDEO</li>
 				</ul>
 				<p class="black-dual-p">We work with advertisers and demand<br>partners to deliver user-initiated VAST-<br>enabled brand safe video inventory at<br>scale. You can target your audience<br>across multi-screens using valuable<br>insights such as age, gender and geo.<br>CPM and performance models available.<br><br>
 				<img src="bg-closeFeature.png" class="bg-img"/></p>
 			</div><div class="black-dual" id="black-dual-last">
-				<ul class="blurbg-top">
+				<ul class="blurbg-top" data-svm="mobile">
 					<li id="mobile-fs"></li>
 					<li id="mobile-text">MOBILE</li>
 				</ul>
