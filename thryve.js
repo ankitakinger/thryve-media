@@ -11,8 +11,9 @@ $(document).ready(function(){
 	};
 
 	$(".abtus-top").click(function(){
+		var navh = $(".nav-fix").height();
 		if(sections[this.dataset.href]==true){
-			$("body").animate({scrollTop:($("#"+this.dataset.href).offset().top-73)},500);
+			$("body").animate({scrollTop:($("#"+this.dataset.href).offset().top-navh)},500);
 		}
 		else{
 			$("body").animate({scrollTop:($("#"+this.dataset.href).offset().top)},500);
