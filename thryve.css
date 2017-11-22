@@ -118,6 +118,13 @@ a{
 	border-bottom: none !important;
 }
 
+#navicon{
+	display: none;
+	padding-top: 10px;
+	color:#a2d557;
+	font-size: 25px;
+}
+
 #section2{
 	text-align: center;
 	padding-top: 130px;
@@ -151,10 +158,6 @@ a{
 	margin-top: 120px;
 }
 
-#section3>div:hover{
-	background-color: rgba(162, 213, 87,0.6) !important;
-}
-
 .black-dual{
 	display: inline-block;
 	width:33.33%;
@@ -184,6 +187,10 @@ a{
 
 #section3>div:nth-child(2){
 	background-color: rgba(1,1,1,0.6);
+}
+
+#section3>div:hover{
+	background-color: rgba(162, 213, 87,0.6);
 }
 
 .blurbg-top{
@@ -223,10 +230,9 @@ a{
 
 #section4{
 	text-align: center;
-	margin-top: 120px;
 	font-size: 70px;
 	font-family: sans-serif;
-	padding-top: 120px;
+	padding-top: 240px;
 }
 
 #why{
@@ -271,7 +277,7 @@ a{
 
 .setsprite-div{
 	display: inline-block;
-	width:275px;
+	width:280px;
 	vertical-align: top;
 }
 
@@ -283,6 +289,7 @@ a{
 	font-weight: bold;
 	margin-top: 30px;
 	list-style-type: none;
+	padding: 0px;
 }
 
 #section6{
@@ -622,9 +629,8 @@ a{
 	}
 
 	#section4{
-	margin-top: 40px;
 	font-size: 40px;
-	padding-top: 70px;
+	padding-top: 110px;
 	}
 
 	#why{
@@ -659,10 +665,6 @@ a{
 	#graph-ss{
 	background: url("settingssprite.png") -863px 0 no-repeat;
 	background-size: cover;
-	}
-
-	.setsprite-div{
-	width:260px;
 	}
 
 	.setsprite-text{
@@ -811,8 +813,24 @@ a{
 		display: none;
 	}
 
+	.abtus-top2{
+		display: block;
+		width:100%;
+		background-color: rgba(162, 213, 87,0.9);
+		margin: 0;
+		font-size: 25px;
+		padding: 10px;
+		z-index: 1;
+		top:45px;
+		position: relative;
+	}
+
+	.abtus-top:hover{
+	border-bottom:rgba(162, 213, 87,0.9);
+	}
+
 	.nav-fix{
-		display:none;
+		height:45px;
 	}
 
 	#section2{
@@ -840,10 +858,6 @@ a{
 	background: #eeeff4;
 	}
 
-	#section3>div:hover{
-	background-color: none;
-	}
-
 	.black-dual{
 	display: block;
 	height: 550px;
@@ -866,6 +880,10 @@ a{
 
 	#section3>div:nth-child(2){
 	background-color: rgba(1,1,1,0);
+	}
+
+	#section3>div:hover{
+	background-color: #eeeff4;
 	}
 
 	.blurbg-top{
@@ -903,9 +921,8 @@ a{
 	}
 
 	#section4{
-	margin-top: 40px;
 	font-size: 40px;
-	padding-top: 40px;
+	padding-top: 80px;
 	}
 
 	#why{
@@ -920,6 +937,10 @@ a{
 	#hr1{
 	margin-top: 35px;
 	width:20%;
+	}
+
+	.setsprite-div{
+		width:400px;
 	}
 
 	.setsprite{
